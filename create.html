@@ -89,76 +89,77 @@
                     </li>
                     <li><i class='bx bx-chevron-right'></i></li>
                     <li>
-                        <a class="active" href="#">Create new</a>
+                        <a class="active" href="#">new</a>
                     </li>
                 </ul>
             </div>
-            <!--            <a href="#" class="btn-download">-->
-            <!--                <i class='bx bxs-cloud-download'></i>-->
-            <!--                <span class="text">Download PDF</span>-->
-            <!--            </a>-->
             <a href="#" class="btn-download">
-                <i class='bx bx-plus-circle' ></i>
-                <span class="text">Create new ticket</span>
+                <i class='bx bx-plus-circle'></i>
+                <span class="text">Cancel</span>
             </a>
         </div>
 
         <div class="card flex">
             <div class="card-header">
-                <div class="col-auto">
-                    <table class="table">
-                        <tr>
-                            <th>
-                                <label for="subject" class="col-form-label">Tiêu đề:</label>
-                            </th>
-                            <td>
-                                <input type="text" id="subject" class="form-control-plaintext"
-                                       placeholder="Nhập Tiêu đề">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="requester" class="col-form-label">Người yêu cầu:</label>
-                            </th>
-                            <td>
-                                <input type="text" id="requester" class="form-control-plaintext"
-                                       placeholder="Requester" readonly>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="row g-2 mb-1 align-items-center">
+                    <div class="col-1">
+                        <label for="subject" class="col-form-label">Subject:</label>
+                    </div>
+                    <div class="col border-bottom">
+                        <input type="text" id="subject" class="form-control-plaintext">
+                    </div>
+                </div>
+                <div class="row g-2 mb-1 align-items-center">
+                    <div class="col-1">
+                        <label for="requester" class="col-form-label">Requester:</label>
+                    </div>
+                    <div class="col border-bottom">
+                        <input type="text" id="requester" class="form-control-plaintext" readonly placeholder="ThanhNV">
+                    </div>
+                </div>
+                <div class="row g-2 mb-1 align-items-center">
+                    <div class="col-1">
+                        <label class="col-form-label">Status:</label>
+                    </div>
+                    <div class="col-auto">
+                        <select class="form-select">
+                            <option value="open">Open</option>
+                            <option value="pending">Pending</option>
+                            <option value="onhold">On hold</option>
+                            <option value="solved">Solved</option>
+                            <option value="closed">Closed</option>
+                        </select>
+                    </div>
                 </div>
             </div>
+
             <div class="card-body">
                 <label for="exampleFormControlTextarea1" class="form-label">Description</label>
 
-                <table class="table">
-                    <tr>
-                        <td>Request:</td>
-                        <td>
-                            <textarea class="form-control-plaintext"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Response:</td>
-                        <td>
-                            <textarea class="form-control-plaintext"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Request</td>
-                        <td>
-                            <textarea class="form-control-plaintext"></textarea>
-                        </td>
-                    </tr>
-                </table>
+                <div class="row g-2 mb-1 align-items-center">
+                    <div class="col-1">
+                        <label for="requester" class="col-form-label">Request:</label>
+                    </div>
+                    <div class="col border-bottom">
+                        <textarea class="form-control-plaintext"></textarea>
+                    </div>
+                </div>
+                <div class="row g-2 mb-1 align-items-center">
+                    <div class="col-1">
+                        <label for="requester" class="col-form-label">Response:</label>
+                    </div>
+                    <div class="col border-bottom">
+                        <textarea class="form-control-plaintext"></textarea>
+                    </div>
+                </div>
 
                 <div>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <a href="#" class="btn btn-primary">Gửi</a>
+                    <a href="#" class="btn btn-primary">Send</a>
                 </div>
             </div>
             <div class="card-footer text-body-secondary">
-                ...
+                Note: ...
             </div>
         </div>
     </main>
